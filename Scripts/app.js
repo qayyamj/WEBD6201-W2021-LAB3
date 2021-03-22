@@ -333,7 +333,7 @@ March 22, 2021
           messageArea.removeAttr("class").hide();
 
           // redirect user to secure area - contact-list.html
-          location.href = "/contact-list";
+          location.href = "contact-list";
         }
         else
         {
