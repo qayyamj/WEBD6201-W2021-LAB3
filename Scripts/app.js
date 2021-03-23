@@ -229,12 +229,12 @@ March 22, 2021
            {
             localStorage.removeItem($(this).val());
            }
-           location.href = "contact-list"; // refresh the page
+           location.href = "/contact-list"; // refresh the page
          });
 
          $("#addButton").on("click", function() 
          {
-          location.href = "edit";
+          location.href = "/edit";
          });
       }
     }
@@ -285,14 +285,14 @@ March 22, 2021
           localStorage.setItem(key, contact.serialize());
 
           // return to the contact list
-          location.href = "contact-list";
+          location.href = "/contact-list";
           
         });
 
       $("#cancelButton").on("click", function()
       {
         // return to the contact list
-        location.href = "contact-list";
+        location.href = "/contact-list";
       });
     }
 
@@ -333,7 +333,7 @@ March 22, 2021
           messageArea.removeAttr("class").hide();
 
           // redirect user to secure area - contact-list.html
-          location.href = "contact-list";
+          location.href = "/contact-list";
         }
         else
         {
@@ -368,7 +368,7 @@ March 22, 2021
         // clear the login form
         document.forms[0].reset();
         // return to the home page
-        location.href = "home";
+        location.href = "/home";
       });
     }
 
@@ -393,7 +393,7 @@ March 22, 2021
           sessionStorage.clear();
 
           // redirect back to login
-          location.href = "login";
+          location.href = "/login";
         });
 
         // make it look like each nav item is an active link
@@ -425,7 +425,7 @@ March 22, 2021
       if(!sessionStorage.getItem("user"))
       {
       // redirect back to login page
-      location.href = "login";
+      location.href = "/login";
       }
     }
 
